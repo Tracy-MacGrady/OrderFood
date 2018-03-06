@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--页面主色-->
+    <color name="main_color1">#ef4926</color>
+    <color name="main_color2">#f37a5a</color>
+    <color name="color1">#1a413c</color>
+    <color name="color2">#7cc699</color>
+    <color name="color3">#f3e4c2</color>
+    <color name="bg_color">#ffffff</color>
+    <!--text color-->
+    <color name="textcolor">#ffffff</color>
+    <color name="textcolor_pressed">#f3e4c2</color>
+    <color name="textcolor_black">#000000</color>
+
+
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/layout_normal_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titlebar"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_color1"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="@dimen/padding_normal"-->
+            <!--android:paddingTop="@dimen/padding_normal"-->
+            <!--android:text="@string/food_menu"-->
+            <!--android:textColor="@color/textcolor"-->
+            <!--android:textSize="@dimen/text_size_xl"-->
+            <!--android:textStyle="bold" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_space_height_s"
+                android:background="@color/white" />
+
+            <ListView
+                android:id="@+id/menu_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/white"
+                android:dividerHeight="@dimen/line_space_height_s"
+                android:listSelector="@android:color/transparent"
+                android:overScrollFooter="@android:color/transparent"
+                android:overScrollHeader="@android:color/transparent"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+
+            <RelativeLayout
+                android:id="@+id/place_order_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_place_order_height"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/order_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:paddingRight="@dimen/padding_small"
+                    android:text="@string/order_money"
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="@dimen/text_size_xxxl" />
+
+                <Button
+                    android:id="@+id/place_order_button"
+                    android:layout_width="@dimen/place_order_view_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/place_order_button_bg_selector"
+                    android:text="@string/place_order"
+                    android:textColor="@color/text_click_selector"
+                    android:textSize="@dimen/text_size_xxxl" />
+
+                <View
+                    android:layout_width="@dimen/line_space_height_s"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/place_order_button"
+                    android:background="@color/color1" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/space_line1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_space_height_s"
+                android:layout_above="@id/place_order_layout"
+                android:background="@color/color1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/space_line1"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/right_layout"
+                    android:layout_width="@dimen/place_order_view_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/choose_taste"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/padding_normal"
+                        android:paddingTop="@dimen/padding_normal"
+                        android:text="@string/add_taste"
+                        android:textColor="@color/text_click_selector"
+                        android:textSize="@dimen/text_size_xl" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/orderfood_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/choose_taste"
+                        android:overScrollMode="never" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/right_space_line"
+                    android:layout_width="@dimen/line_space_height_s"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/right_layout"
+                    android:background="@color/color1" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/right_space_line"
+                    android:overScrollMode="never"
+                    android:paddingRight="@dimen/margin_normal"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

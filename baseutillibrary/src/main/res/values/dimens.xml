@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--padding-->
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <!--margin-->
+    <dimen name="margin_small">6dp</dimen>
+    <dimen name="margin_normal">12dp</dimen>
+    <dimen name="margin_large">18dp</dimen>
+    <dimen name="margin_large_l">24dp</dimen>
+    <dimen name="margin_large_xl">34dp</dimen>
+    <!--textsize-->
+    <dimen name="text_size_s">8sp</dimen>
+    <dimen name="text_size_m">10sp</dimen>
+    <dimen name="text_size_l">12sp</dimen>
+    <dimen name="text_size_xl">16sp</dimen>
+    <dimen name="text_size_xxl">20sp</dimen>
+    <dimen name="text_size_xxxl">24sp</dimen>
+    <!--title高度-->
+    <dimen name="titlebar_height">60dp</dimen>
+    <!--分割线的高度-->
+    <dimen name="line_space_height_s">1px</dimen>
+    <dimen name="line_space_height_m">2dp</dimen>
+    <dimen name="line_space_height_l">4dp</dimen>
+    <dimen name="line_space_height_xl">8dp</dimen>
+    <dimen name="line_space_height_xxl">12dp</dimen>
+
+</resources>

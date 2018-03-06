@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OrderFood</string>
+    <string name="order_money">总金额：</string>
+    <string name="place_order">   下单   </string>
+    <string name="food_menu">菜单分类</string>
+    <string name="add_taste">口味选择</string>
+    <string name="username_hint">请输入用户名</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="login">登陆</string>
+    <string name="add_to_shopcar">添加</string>
+</resources>

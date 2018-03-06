@@ -53,11 +53,4 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
-.gitignore
-build.gradle
-libs/
-proguard-rules.pro
-src/
 .idea
-app/
-baseutillibrary/

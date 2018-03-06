@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/main_color2</color>
+    <color name="colorPrimaryDark">@color/main_color1</color>
+    <color name="colorAccent">@color/color2</color>
+    <color name="white">#ffffff</color>
+    <color name="textcolor_hint">#999999</color>
+</resources>
